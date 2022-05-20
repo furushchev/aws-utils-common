@@ -52,7 +52,7 @@ foreach(_imported_lib ${${PROJECT_NAME}_IMPORTED_LIBRARIES})
 endforeach()
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(${PROJECT_NAME} ${${PROJECT_NAME}_IMPORTED_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} ${${PROJECT_NAME}_IMPORTED_LIBRARIES} -lcurl)
 target_include_directories(${PROJECT_NAME} PRIVATE ${AWSSDK_INCLUDE_DIR})
 target_include_directories(${PROJECT_NAME} PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>

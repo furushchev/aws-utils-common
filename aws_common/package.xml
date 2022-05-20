@@ -20,6 +20,7 @@
   <depend>zlib</depend>
   <depend>uuid</depend>
   <depend>curl</depend>
+  <depend>libcurl4-openssl-dev</depend>
   <depend>libssl-dev</depend>
 
   <test_depend condition="$ROS_VERSION == 1">gtest</test_depend>
